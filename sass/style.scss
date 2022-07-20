@@ -1,0 +1,37 @@
+/* Variables */
+
+$color-one: #1e90ff;
+$color-two: #eccc68;
+$color-three: #2ed573;
+$color-main: #2f3542;
+
+$font-text: 'Merriweather', serif;
+$font-header: 'Lato', sans-serif;
+
+$transition: all 1s;
+/* Global */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    line-height: 1.23;
+    font-family: $font-text;
+    color: $color-main;
+    background: #fff;
+}
+h1, h2, h3 {
+    font-family: $font-header; 
+    font-weight: 100;
+    line-height: 1.02;
+
+}
+.container {
+    width: 100%;
+    padding: 0 ;
+    margin: 0 auto;
+}
+
+.table {width: 100%}
