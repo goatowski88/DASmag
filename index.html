@@ -4,103 +4,344 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>DASmag</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-    <link rel="stylesheet" href="vendor/bootstrap-grid.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet"> 
+
 </head>
 
 <body>
-<section class="table">
 <div class="container">
-<div class="row">       
-  <table class="table-main table-striped col-lg-12">
-    <thead>
-      <tr>
-        <th class="col-lg-1">nr zam</th>        
-        <th class="col-lg-1">nr kl</th>
-        <th class="col-lg-2">nabywca</th>
-        <th class="col-lg-3">dostawa</th>
-        <th class="col-lg-1">płatność </th>
-        <th class="col-lg-3">przewoźnik</th>
-        <th class="col-lg-1">status</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td class="">1234</td>
-        <td class="">B2C/112</td>
-        <td class="">Besolux</td>
-        <td class="">88-888 Parzymiechy</td>
-        <td class="">przelew</th>
-        <td class="">EWEXXXX<br>Marian Paździoch</td>
-        <td class="">ok</td>
-      </tr>
-      
+        <div class="d-flex justify-content-center row">
+            <div class="col">
+                <div class="rounded">
+                    <div class="table-responsive table-borderless">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th class="col-lg-1" colspan="1">nr zam</th>        
+                                    <th class="col-lg-1" colspan="1">nr kl</th>
+                                    <th class="col-lg-1" colspan="1">nabywca</th>
+                                    <th class="col-lg-2" colspan="2">dostawa</th>
+                                    <th class="col-lg-1" colspan="1">zał</th>
+                                    <th class="col-lg-1" colspan="1">płatność </th>
+                                    <th class="col-lg-2" colspan="2">przewoźnik</th>
+                                    <th class="col-lg-2" colspan="2">uwagi</th>
+                                    <th class="col-lg-1" colspan="1">status</th>
+                                </tr>
+                            </thead>
 
-      
-      <tr>
-        <td class="">7234</td>
-        <td class="">B2C/112</td>
-        <td class="">Luxobes</td>
-        <td class="">1111 Paryż</td>
-        <td class="">przelew</td>
-        <td class="">EWEXXXX<br>Marian Paździoch</td>
-        <td class="">ok</td>
-      </tr>
-      <tr>
-        <td class="">2234</td>
-        <td class=""></td>
-        <td class="">Partner</td>
-        <td class="">98-400 Wieruszów</td>
-        <td class="">zapł</td>
-        <td class="">DAS</td>
-        <td class="">ok</td>
-      </tr>
-      <tr>
-        <td class="">3234</td>
-        <td class="">xxx</td>
-        <td class="">Westwing PL</td>
-        <td class="">11-111 xxxxxx</td>
-        <td class="">przelew</td>
-        <td class="">DAS</td>
-        <td class="">ok</td>
-      </tr>
-      <tr>
-        <td class="">4234</td>
-        <td class=""></td>
-        <td class="">Halina Mąka</td>
-        <td class="">11-111 xxxxxx</td>
-        <td class="">zapł</td>
-        <td class="">DPD</td>
-        <td class="">ok</td>
-      </tr>
-      <tr>
-        <td class="">5234</td>
-        <td class="">xxx</td>
-        <td class="">M-line</td>
-        <td class="">98-400 Wieruszów</td>
-        <td class="">przelew</td>
-        <td class="">DAS</td>
-        <td class="">ok</td>
-      </tr>
-      <tr>
-        <td class="">6234</td>
-        <td class="">xxx</td>
-        <td class="">Global</td>
-        <td class="">xxx</td>
-        <td class="">przelew</td>
-        <td class="">kontener</td>
-        <td class="">ok</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-</div>
-</section>
+                            <tbody class="table-body">
+                                <tr class="cell-1" data-toggle="collapse" data-target="#demo">
+                                   <td class="" colspan="1">1234</td>
+                                   <td colspan="1">B2C/112</td>
+                                   <td colspan="1">Besolux</td>
+                                   <td colspan="2">88-888 Parzymiechy</td>
+                                   <td colspan="1">zał</th>
+                                   <td colspan="1">przelew</th>
+                                   <td colspan="2">EWEXXXX<br>Marian Paździoch</td>
+                                   <td colspan="1">uwagi</th>
+                                   <td colspan="1">ok</td>
+                                   <td class="table-elipse" data-toggle="collapse" data-target="#demo"><i class="fa fa-ellipsis-h text-black-50"></i></td>
+                                </tr>
+                                 <tbody id="demo" class="collapse cell-1 row-child">
+                                   <tr style="font-weight: 900;">
+                                       <td colspan="1">Poz</td>
+                                       <td colspan="3">Nazwa</td>
+                                       <td colspan="1">ilosc</td>
+                                       <td colspan="2">pak</td>
+                                       <td colspan="2">lok</td>
+                                       <td colspan="2">podglad</td>
+                                       <td colspan="2">status</td>
+                                   </tr>
+                                   <tr>
+                                       <td colspan="1">1234.1</td>
+                                       <td colspan="3">k. Larissa tkanina/stelaż</td>
+                                       <td colspan="1">40</td>
+                                       <td colspan="2">xxx</td>
+                                       <td colspan="2">C1</td>
+                                       <td colspan="2">podglad</td>
+                                       <td colspan="2">status</td>
+                                   </tr>
+                                 <tr>
+                                       <td colspan="1">1234.2</td>
+                                       <td colspan="3">s. Larissa tkanina/stelaż</td>
+                                       <td colspan="1">15</td>
+                                       <td colspan="2">xxx</td>
+                                       <td colspan="2">A2</td>
+                                       <td colspan="2">podglad</td>
+                                       <td colspan="2">status</td>
+                                   </tr>
+                                 <tr>
+                                       <td colspan="1">1234.3</td>
+                                       <td colspan="3">Hooker tkanina/stelaż</td>
+                                       <td colspan="1">100</td>
+                                       <td colspan="2">xxx</td>
+                                       <td colspan="2">C2</td>
+                                       <td colspan="2">podglad</td>
+                                       <td colspan="2">status</td>
+                                   </tr></tbody>
 
+
+                                <tr class="cell-1" data-toggle="collapse" data-target="#demo-2">
+                                   <td class="" colspan="1">7234</td>
+                                   <td colspan="1">B2C/112</td>
+                                   <td colspan="1">Luxobes</td>
+                                   <td colspan="2">1111 Paryż</td>
+                                   <td colspan="1">zał</th>
+                                   <td colspan="1">przelew</th>
+                                   <td colspan="2">EWEXXXX<br>Marian Paździoch</td>
+                                   <td colspan="1">uwagi</th>
+                                   <td colspan="1">ok</td>
+                                   <td class="table-elipse" data-toggle="collapse" data-target="#demo"><i class="fa fa-ellipsis-h text-black-50"></i></td>
+                                </tr>
+                                   <tbody id="demo-2" class="collapse cell-1 row-child">
+                                   <tr style="font-weight: 900;">
+                                       <td colspan="1">Poz</td>
+                                       <td colspan="3">Nazwa</td>
+                                       <td colspan="1">ilosc</td>
+                                       <td colspan="2">pak</td>
+                                       <td colspan="2">lok</td>
+                                       <td colspan="2">podglad</td>
+                                       <td colspan="2">status</td>
+                                   </tr>
+                                   <tr>
+                                       <td colspan="1">7234.1</td>
+                                       <td colspan="3">k. Larissa tkanina/stelaż</td>
+                                       <td colspan="1">40</td>
+                                       <td colspan="2">xxx</td>
+                                       <td colspan="2">C1</td>
+                                       <td colspan="2">podglad</td>
+                                       <td colspan="2">status</td>
+                                   </tr>
+                                 <tr>
+                                       <td colspan="1">7234.2</td>
+                                       <td colspan="3">s. Larissa tkanina/stelaż</td>
+                                       <td colspan="1">15</td>
+                                       <td colspan="2">xxx</td>
+                                       <td colspan="2">A2</td>
+                                       <td colspan="2">podglad</td>
+                                       <td colspan="2">status</td>
+                                   </tr>
+                                 <tr>
+                                       <td colspan="1">7234.3</td>
+                                       <td colspan="3">Hooker tkanina/stelaż</td>
+                                       <td colspan="1">100</td>
+                                       <td colspan="2">xxx</td>
+                                       <td colspan="2">C2</td>
+                                       <td colspan="2">podglad</td>
+                                       <td colspan="2">status</td>
+                                   </tr></tbody>
+                               
+                                <tr class="cell-1" data-toggle="collapse" data-target="#demo-3">
+                                   <td class="" colspan="1">2234</td>
+                                   <td colspan="1"></td>
+                                   <td colspan="1">Partner</td>
+                                   <td colspan="2">98-400 Wieruszów</td>
+                                   <td colspan="1">zał</th>
+                                   <td colspan="1">zapł</td>
+                                   <td colspan="2">DAS</td>
+                                   <td colspan="1">uwagi</th>
+                                   <td colspan="1">ok</td>
+                                   <td class="table-elipse" data-toggle="collapse" data-target="#demo"><i class="fa fa-ellipsis-h text-black-50"></i></td>
+                                </tr>
+                                   <tbody id="demo-3" class="collapse cell-1 row-child">
+                                   <tr style="font-weight: 900;">
+                                       <td colspan="1">Poz</td>
+                                       <td colspan="3">Nazwa</td>
+                                       <td colspan="1">ilosc</td>
+                                       <td colspan="2">pak</td>
+                                       <td colspan="2">lok</td>
+                                       <td colspan="2">podglad</td>
+                                       <td colspan="2">status</td>
+                                   </tr>
+                                   <tr>
+                                       <td colspan="1">2234.1</td>
+                                       <td colspan="3">k. Larissa tkanina/stelaż</td>
+                                       <td colspan="1">40</td>
+                                       <td colspan="2">xxx</td>
+                                       <td colspan="2">C1</td>
+                                       <td colspan="2">podglad</td>
+                                       <td colspan="2">status</td>
+                                   </tr>
+                                 <tr>
+                                       <td colspan="1">2234.2</td>
+                                       <td colspan="3">s. Larissa tkanina/stelaż</td>
+                                       <td colspan="1">15</td>
+                                       <td colspan="2">xxx</td>
+                                       <td colspan="2">A2</td>
+                                       <td colspan="2">podglad</td>
+                                       <td colspan="2">status</td>
+                                   </tr>
+                                 <tr>
+                                       <td colspan="1">2234.3</td>
+                                       <td colspan="3">Hooker tkanina/stelaż</td>
+                                       <td colspan="1">100</td>
+                                       <td colspan="2">xxx</td>
+                                       <td colspan="2">C2</td>
+                                       <td colspan="2">podglad</td>
+                                       <td colspan="2">status</td>
+                                   </tr></tbody>
+
+                                <tr class="cell-1" data-toggle="collapse" data-target="#demo-4">
+                                   <td class="" colspan="1">4234</td>
+                                   <td colspan="1"></td>
+                                   <td colspan="1">Halina Mąka</td>
+                                   <td colspan="2">11-111 xxxxxx</td>
+                                   <td colspan="1">zał</th>
+                                   <td colspan="1">zapł</td>
+                                   <td colspan="2">DPD</td>
+                                   <td colspan="1">uwagi</th>
+                                   <td colspan="1">ok</td>
+                                   <td class="table-elipse" data-toggle="collapse" data-target="#demo"><i class="fa fa-ellipsis-h text-black-50"></i></td>
+                                </tr>
+                                   <tbody id="demo-4" class="collapse cell-1 row-child">
+                                   <tr style="font-weight: 900;">
+                                       <td colspan="1">Poz</td>
+                                       <td colspan="3">Nazwa</td>
+                                       <td colspan="1">ilosc</td>
+                                       <td colspan="2">pak</td>
+                                       <td colspan="2">lok</td>
+                                       <td colspan="2">podglad</td>
+                                       <td colspan="2">status</td>
+                                   </tr>
+                                   <tr>
+                                       <td colspan="1">4234.1</td>
+                                       <td colspan="3">k. Larissa tkanina/stelaż</td>
+                                       <td colspan="1">40</td>
+                                       <td colspan="2">xxx</td>
+                                       <td colspan="2">C1</td>
+                                       <td colspan="2">podglad</td>
+                                       <td colspan="2">status</td>
+                                   </tr>
+                                 <tr>
+                                       <td colspan="1">4234.2</td>
+                                       <td colspan="3">s. Larissa tkanina/stelaż</td>
+                                       <td colspan="1">15</td>
+                                       <td colspan="2">xxx</td>
+                                       <td colspan="2">A2</td>
+                                       <td colspan="2">podglad</td>
+                                       <td colspan="2">status</td>
+                                   </tr>
+                                 <tr>
+                                       <td colspan="1">4234.3</td>
+                                       <td colspan="3">Hooker tkanina/stelaż</td>
+                                       <td colspan="1">100</td>
+                                       <td colspan="2">xxx</td>
+                                       <td colspan="2">C2</td>
+                                       <td colspan="2">podglad</td>
+                                       <td colspan="2">status</td>
+                                   </tr></tbody>
+
+                                <tr class="cell-1" data-toggle="collapse" data-target="#demo-5">
+                                   <td class="" colspan="1">5234</td>
+                                   <td colspan="1">xxx</td>
+                                   <td colspan="1">M-line</td>
+                                   <td colspan="2">98-400 Wieruszów</td>
+                                   <td colspan="1">zał</th>
+                                   <td colspan="1">przelew</th>
+                                   <td colspan="2">DAS</td>
+                                   <td colspan="1">uwagi</th>
+                                   <td colspan="1">ok</td>
+                                   <td class="table-elipse" data-toggle="collapse" data-target="#demo"><i class="fa fa-ellipsis-h text-black-50"></i></td>
+                                </tr>
+                                   <tbody id="demo-5" class="collapse cell-1 row-child">
+                                   <tr style="font-weight: 900;">
+                                       <td colspan="1">Poz</td>
+                                       <td colspan="3">Nazwa</td>
+                                       <td colspan="1">ilosc</td>
+                                       <td colspan="2">pak</td>
+                                       <td colspan="2">lok</td>
+                                       <td colspan="2">podglad</td>
+                                       <td colspan="2">status</td>
+                                   </tr>
+                                   <tr>
+                                       <td colspan="1">5234.1</td>
+                                       <td colspan="3">k. Larissa tkanina/stelaż</td>
+                                       <td colspan="1">40</td>
+                                       <td colspan="2">xxx</td>
+                                       <td colspan="2">C1</td>
+                                       <td colspan="2">podglad</td>
+                                       <td colspan="2">status</td>
+                                   </tr>
+                                 <tr>
+                                       <td colspan="1">5234.2</td>
+                                       <td colspan="3">s. Larissa tkanina/stelaż</td>
+                                       <td colspan="1">15</td>
+                                       <td colspan="2">xxx</td>
+                                       <td colspan="2">A2</td>
+                                       <td colspan="2">podglad</td>
+                                       <td colspan="2">status</td>
+                                   </tr>
+                                 <tr>
+                                       <td colspan="1">5234.3</td>
+                                       <td colspan="3">Hooker tkanina/stelaż</td>
+                                       <td colspan="1">100</td>
+                                       <td colspan="2">xxx</td>
+                                       <td colspan="2">C2</td>
+                                       <td colspan="2">podglad</td>
+                                       <td colspan="2">status</td>
+                                   </tr></tbody>
+
+                                <tr class="cell-1" data-toggle="collapse" data-target="#demo-6">
+                                   <td class="" colspan="1">6234</td>
+                                   <td colspan="1">xxx</td>
+                                   <td colspan="1">Global</td>
+                                   <td colspan="2">xxx</td>
+                                   <td colspan="1">zał</th>
+                                   <td colspan="1">przelew</th>
+                                   <td colspan="2">kontener</td>
+                                   <td colspan="1">uwagi</th>
+                                   <td colspan="1">ok</td>
+                                   <td class="table-elipse" data-toggle="collapse" data-target="#demo"><i class="fa fa-ellipsis-h text-black-50"></i></td>
+                                </tr>
+                                   <tbody id="demo-6" class="collapse cell-1 row-child">
+                                   <tr style="font-weight: 900;">
+                                       <td colspan="1">Poz</td>
+                                       <td colspan="3">Nazwa</td>
+                                       <td colspan="1">ilosc</td>
+                                       <td colspan="2">pak</td>
+                                       <td colspan="2">lok</td>
+                                       <td colspan="2">podglad</td>
+                                       <td colspan="2">status</td>
+                                   </tr>
+                                   <tr>
+                                       <td colspan="1">6234.1</td>
+                                       <td colspan="3">k. Larissa tkanina/stelaż</td>
+                                       <td colspan="1">40</td>
+                                       <td colspan="2">xxx</td>
+                                       <td colspan="2">C1</td>
+                                       <td colspan="2">podglad</td>
+                                       <td colspan="2">status</td>
+                                   </tr>
+                                 <tr>
+                                       <td colspan="1">6234.2</td>
+                                       <td colspan="3">s. Larissa tkanina/stelaż</td>
+                                       <td colspan="1">15</td>
+                                       <td colspan="2">xxx</td>
+                                       <td colspan="2">A2</td>
+                                       <td colspan="2">podglad</td>
+                                       <td colspan="2">status</td>
+                                   </tr>
+                                 <tr>
+                                       <td colspan="1">6234.3</td>
+                                       <td colspan="3">Hooker tkanina/stelaż</td>
+                                       <td colspan="1">100</td>
+                                       <td colspan="2">xxx</td>
+                                       <td colspan="2">C2</td>
+                                       <td colspan="2">podglad</td>
+                                       <td colspan="2">status</td>
+                                   </tr></tbody>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html> 

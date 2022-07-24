@@ -1,37 +1,33 @@
-/* Variables */
-
-$color-one: #1e90ff;
-$color-two: #eccc68;
-$color-three: #2ed573;
-$color-main: #2f3542;
-
-$font-text: 'Merriweather', serif;
-$font-header: 'Lato', sans-serif;
-
-$transition: all 1s;
-/* Global */
-
-*, *::before, *::after {
-    box-sizing: border-box;
-}
+@import url('https://fonts.googleapis.com/css?family=Assistant');
 
 body {
-    margin: 0;
-    line-height: 1.23;
-    font-family: $font-text;
-    color: $color-main;
-    background: #fff;
-}
-h1, h2, h3 {
-    font-family: $font-header; 
-    font-weight: 100;
-    line-height: 1.02;
-
-}
-.container {
-    width: 100%;
-    padding: 0 ;
-    margin: 0 auto;
+    background: #eee;
+    font-family: Assistant, sans-serif
 }
 
-.table {width: 100%}
+.cell-1 {
+  border-collapse: separate;
+  background: #ffffff;
+  /*background-color: gold;*/
+  background-clip: padding-box;
+  cursor: pointer;
+}
+
+thead {
+  background: #dddcdc;
+}
+
+
+.table-elipse {
+  cursor: pointer;
+}
+
+#demo {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s 0.1s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.row-child {
+}
